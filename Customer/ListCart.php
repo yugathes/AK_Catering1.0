@@ -99,8 +99,11 @@ if(isset($_GET['removeAll'])){
 				<div class="Subtotal" style="margin-bottom: 10px">Delivery Or Pick-Up</div>
 				<input type="radio" name="collection" value="Delivery">
 			  	<label for="Delivery">Delivery</label><br>
+<<<<<<< HEAD
 				<label>Delivery address</label><br>
 				<textarea rows="3" cols="30" name="devaddress"></textarea><br>
+=======
+>>>>>>> refs/remotes/origin/main
 				<input type="radio" name="collection" value="Pick-Up">
 			  	<label for="Pick-Up">Pick-Up</label><br>
 			</div>

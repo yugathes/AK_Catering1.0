@@ -190,12 +190,18 @@ if(isset($_POST["staffAdm"])){
 	$name =$_POST["name"];
 	$Hp = $_POST["Hp"];
 	$uID = $_POST["username"];
+<<<<<<< HEAD
 	$address = $_POST["address"];
+=======
+>>>>>>> refs/remotes/origin/main
 		
 	$queryInsert = "UPDATE users SET
 		name = '".$name."',
 		email = '".$email."',
+<<<<<<< HEAD
 		address = '".$address."',
+=======
+>>>>>>> refs/remotes/origin/main
 		Hp = '".$Hp."'
 		WHERE username = '$uID'";
 
@@ -222,13 +228,19 @@ if(isset($_POST["user"])){
 	$Hp = $_POST["Hp"];
 	$uID = $_POST["username"];
 	$password = $_POST["password"];
+<<<<<<< HEAD
 	$address = $_POST["address"];
+=======
+>>>>>>> refs/remotes/origin/main
 		
 	$queryInsert = "UPDATE users SET
 		name = '".$name."',
 		email = '".$email."',
 		password = '".$password."',
+<<<<<<< HEAD
 		address = '".$address."',
+=======
+>>>>>>> refs/remotes/origin/main
 		Hp = '".$Hp."'
 		WHERE username = '$uID'";
 
@@ -252,14 +264,20 @@ if(isset($_POST["user"])){
 if(isset($_POST["staff"])){
 	$email = $_POST["email"];
 	$name =$_POST["name"];
+<<<<<<< HEAD
 	$password =$_POST["password"];
+=======
+>>>>>>> refs/remotes/origin/main
 	$Hp = $_POST["Hp"];
 	$uID = $_POST["username"];
 		
 	$queryInsert = "UPDATE users SET
 		name = '".$name."',
 		email = '".$email."',
+<<<<<<< HEAD
 		password = '".$password."',
+=======
+>>>>>>> refs/remotes/origin/main
 		Hp = '".$Hp."'
 		WHERE username = '$uID'";
 

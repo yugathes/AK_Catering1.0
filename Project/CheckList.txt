@@ -1,0 +1,37 @@
+Project : Food Catering system
+
+A) Manager								
+Login										/
+Register Manager
+Add Menu
+Modify menu
+Delete menu
+View customer order details					/
+View customer details
+      Password reset for customer			/
+      View customer payment details
+      Customer order confirmation
+View staff details							
+Delivery or pickup details and update
+Generate sales report
+
+
+B)Customer
+Register									/
+Login										/
+View menu									
+Add order (add quantity for food) - either scroll number or key in number
+Modify order
+Delete order
+Order confirmation
+Payment
+
+C)Staff
+Register staff
+Staff login
+Update order details
+
+
+Type user in registration
+table order add approved by
+contact number validation

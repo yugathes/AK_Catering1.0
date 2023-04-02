@@ -36,6 +36,7 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 						<label>Username</label>
 						<input type="text" name="username" value="<?php echo $baris['username']; ?>" disabled><br><br>
 						<label>Email</label>
+<<<<<<< HEAD
 						<input type="email" name="email" value="<?php echo $baris['email'] ?>" required><br><br>
 						<label>Name</label>
 						<input type="text" name="name" value="<?php echo $baris['name'] ?>" required><br><br>
@@ -46,6 +47,16 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 						<label>Address</label>
 						<textarea rows="3" cols="30" name="address" value="<?php echo $baris['address']; ?>" required><?php echo $baris['address']; ?></textarea>
 						<input type="hidden" name="username" value="<?php echo $name;?>" required>
+=======
+						<input type="email" name="email" value="<?php echo $baris['email'] ?>"><br><br>
+						<label>Name</label>
+						<input type="text" name="name" value="<?php echo $baris['name'] ?>"><br><br>
+						<label>Contact Number</label>
+						<input type="text" name="Hp" value="<?php echo $baris['Hp']; ?>"><br><br>
+						<label>Password</label>
+						<input type="text" name="password" value="<?php echo $baris['password']; ?>"><br><br>
+						<input type="hidden" name="username" value="<?php echo $name;?>">
+>>>>>>> refs/remotes/origin/main
 						<button style="position: relative;left: 80%"; type="submit" class="btn" name="user">Update</button>
 					</div> <?php	}?>
 			</form>

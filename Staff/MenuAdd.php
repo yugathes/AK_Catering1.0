@@ -21,6 +21,7 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 				<h1 class="header">Menu Add</h1>
 					<div class="input-group">
 						<label>Name</label>
+<<<<<<< HEAD
 						<input type="text" name="name" required><br><br>
 						<label>Description</label>
 						<textarea rows="5" cols="45" name="description"required></textarea><br><br>
@@ -31,12 +32,28 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 						<label>Category</label>
 						<select id="service" name="category" required>
 							<option value=''>Choose one</option>
+=======
+						<input type="text" name="name" ><br><br>
+						<label>Description</label>
+						<textarea rows="5" cols="45" name="description"></textarea><br><br>
+						<label>Price</label>
+						<input type="number" name="price" step="0.01"><br><br>
+						<label>Image</label>
+						<input id="file-input" type="file" name="receipt" accept="image/png, image/jpeg" required><br><br>
+						<label>Category</label>
+						<select id="service" name="category">
+							<option value='0'>Choose one</option>
+>>>>>>> refs/remotes/origin/main
 							<option value='1'>Rice</option>
 							<option value='2'>Curry</option>
 							<option value='3'>Meat</option>
 							<option value='4'>Vegetables</option>
 							<option value='5'>Sides</option>
+<<<<<<< HEAD
 							<option value='6'>Drinks</option>
+=======
+							<option value='5'>Drinks</option>
+>>>>>>> refs/remotes/origin/main
 						</select>
 						<br><br>
 						

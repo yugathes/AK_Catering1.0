@@ -101,6 +101,7 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 					<div class="input-group2">
 						<?php include('Errors.php');?><br>
 						<label>Username</label>
+<<<<<<< HEAD
 						<input type="text" name="username"required><br><br>
 						<label>Full Name</label>
 						<input type="text" name="name"required><br><br>
@@ -113,6 +114,20 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 						<label>Type User</label>
 						<select name="type_user" required>
 							<option value="">Choose One</option>
+=======
+						<input type="text" name="username"><br><br>
+						<label>Full Name</label>
+						<input type="text" name="name"><br><br>
+						<label>Email</label>
+						<input type="email" name="email"><br><br>
+						<label>Password</label>
+						<input type="password" name="password"><br><br>
+						<label>Contact Number</label>
+						<input type="text" name="Hp" placeholder="0123456789"><br><br>
+						<label>Type User</label>
+						<select name="type_user" required>
+							<option value="0">Choose One</option>
+>>>>>>> refs/remotes/origin/main
 							<option value="Manager">Manager</option>
 							<option value="Staff">Staff</option>
 						<select>

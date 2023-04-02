@@ -95,17 +95,28 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 	<table id="table" border="1" align="center">
 		<tr>
 			<th>No</th>
+<<<<<<< HEAD
 			<th style="width:25%" colspan="2">Menu & Quantity</th>
+=======
+			<th style="width:auto" colspan="2">Menu & Quantity</th>
+>>>>>>> refs/remotes/origin/main
 			<th>Total</th>
 			<th>Username</th>
 			<th>Date</th>
 			<th>Time</th>
 			<th>Status</th>
 			<th>Receipt</th>
+<<<<<<< HEAD
 			<th>Collection</th>
 			<th colspan="2">Collection Time Date</th>
 			<th>Action</th>
 			<th>Address</th>
+=======
+			<th>Approved By</th>
+			<th>Collection</th>
+			<th colspan="2">Collection Time Date</th>
+			<th>Action</th>
+>>>>>>> refs/remotes/origin/main
 		</tr>	
 <?php	$no=1;
 		while($row= mysqli_fetch_array($resultGet, MYSQLI_BOTH))
@@ -141,7 +152,10 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 			<td><?php echo $row['username'];?></td>
 			<td><?php echo $date;?></td>
 			<td><?php echo $time;?></td>
+<<<<<<< HEAD
 			
+=======
+>>>>>>> refs/remotes/origin/main
 			<td><?php	
 			if($row['status']=="0")	echo "<p style='color: #ff8d00;'>Waiting For Payment</p>"; 
 			if($row['status']=="1")	echo "<p style='color: #b7b72c;'>Waiting For Approval</p>"; 
@@ -163,7 +177,11 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 						</a>	
 					</div><?php	}?>
 			</td>	
+<<<<<<< HEAD
 			
+=======
+			<td><?php if($row['approvedBy']==NULL)	echo "No approval";	echo $row['approvedBy'];?></td>
+>>>>>>> refs/remotes/origin/main
 			<input type="hidden" name="id" value="<?php echo $row['id'];?>">
 			<input type="hidden" name="user" value="<?php echo $row['username'];?>">
 			<input type="hidden" name="approveBy" value="<?php echo $_SESSION['username'];?>">
@@ -183,7 +201,10 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 			if($row['status']=="2")	echo "<p style='color: green;'>Approved</p>"; 
 			if($row['status']=="3")	echo "<p style='color: red;'>Declined</p>"; 
 			?></td>
+<<<<<<< HEAD
 			<td><?php echo $row['devaddress'];?></td>
+=======
+>>>>>>> refs/remotes/origin/main
 			</form>	
 		</tr>
 			<?php	$no++;	}?>

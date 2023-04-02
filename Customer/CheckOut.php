@@ -18,7 +18,10 @@ if (isset($_POST['checkout'])) {
 	$menu = $_SESSION['cart'];
 	$quantity = $_POST['quantity'];
 	$collection = $_POST['collection'];
+<<<<<<< HEAD
 	$devaddress = $_POST['devaddress'];
+=======
+>>>>>>> refs/remotes/origin/main
 	$collectiontime = $_POST['collectiontime'];
 	$quantityStr = implode('|',$quantity);
 	echo $quantityStr;
@@ -27,8 +30,13 @@ if (isset($_POST['checkout'])) {
 
 	if (count($errors) == 0) 
 	{
+<<<<<<< HEAD
 		$Cquery = "INSERT INTO orders (id, username, menuID, quantity, total, status, collection, collectiontime, devaddress) 
 		VALUES (NULL, '$customer', '$menuStr', '$quantityStr', '$total', '$status', '$collection', '$collectiontime', '$devaddress')";
+=======
+		$Cquery = "INSERT INTO orders (id, username, menuID, quantity, total, status, collection, collectiontime) 
+		VALUES (NULL, '$customer', '$menuStr', '$quantityStr', '$total', '$status', '$collection', '$collectiontime')";
+>>>>>>> refs/remotes/origin/main
 		$result= mysqli_query($link, $Cquery);
 		if (!$result)
 		{

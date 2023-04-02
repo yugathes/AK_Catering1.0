@@ -1,4 +1,5 @@
 -- phpMyAdmin SQL Dump
+<<<<<<< HEAD
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
@@ -6,6 +7,15 @@
 -- Generation Time: Apr 02, 2023 at 01:48 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
+=======
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Apr 26, 2022 at 09:36 PM
+-- Server version: 10.4.20-MariaDB
+-- PHP Version: 8.0.8
+>>>>>>> refs/remotes/origin/main
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,6 +52,7 @@ CREATE TABLE `menu` (
 
 INSERT INTO `menu` (`id`, `name`, `description`, `price`, `image`, `category`) VALUES
 (1, 'White Rice', 'Plain white rice', 2.50, 'White Rice_1.jpg', 1),
+<<<<<<< HEAD
 (2, 'Ghee Rice', 'Basmathi rice ooke wiith ghee', 3.50, 'Ghee Rice_1.jpg', 1),
 (3, 'Briyani Rice', 'Rice has flavors of cumin along with other spices', 4.00, 'Biryani Rice_1.jpg', 1),
 (4, 'Tamarind Rice', 'Rice cooke with tamarin an lemon', 5.50, 'Tamarind Rice_1.jpg', 1),
@@ -52,6 +63,18 @@ INSERT INTO `menu` (`id`, `name`, `description`, `price`, `image`, `category`) V
 (9, 'Fried bitter gourd', 'Bitter gourd cut into small piecces and fried with tumeric powder', 5.50, '4_Fried Bitter Gourd.jpg', 4),
 (10, 'Chilli chicken', 'a popular Indo-Chinese dish of chicken of Hakka Chinese heritage', 2.50, '3_Chilli Chicken.jpg', 3),
 (11, 'Appallam', 'Indian deep fried dough of black gram bean flour, either fried or cooked with dry heat until crunchy', 1.00, '5_Appalam.jpg', 5),
+=======
+(2, 'Ghee Rice', 'Basmathi rice ooke wiith ghee', 7.50, 'Ghee Rice_1.jpg', 1),
+(3, 'Briyani Rice', 'Rice has flavors of cumin along with other spices', 2.50, 'Biryani Rice_1.jpg', 1),
+(4, 'Tamarind Rice', 'Rice cooke with tamarin an lemon', 5.50, 'Tamarind Rice_1.jpg', 1),
+(5, 'Mutton curry', 'Mutton cooked in curry and mix of sautéed onions, tomatoes, garlic, and onion is puréed to make a flavorful sauce with a perfect balance of savory, aromatic spices. ', 7.50, 'Mutton Curry_2.jpg', 2),
+(6, 'Chicken 65', 'Spicy, deep-fried chicken dish with boneless or bone-in chicken and is usually served with an onion and lemon garnish', 1.15, '3_Chicken 65.jpg', 3),
+(7, 'Cabbage stir fry', 'cabbage sliced small size and stir fried with herb and spicess', 6.50, '4_Cabbage Stir Fry.jpg', 4),
+(8, 'Mix vegetable', 'Mixture of 3 different vegetable which is stired fry with anchovvies', 7.50, '4_mix vegetables.jpeg', 4),
+(9, 'Fried bitter gourd', 'Bitter gourd cut into small piecces and fried with tumeric powder', 5.50, '4_Fried Bitter Gourd.jpg', 4),
+(10, 'Chilli chicken', 'a popular Indo-Chinese dish of chicken of Hakka Chinese heritage', 2.50, '3_Chilli Chicken.jpg', 3),
+(11, 'Appallam', 'Indian deep fried dough of black gram bean flour, either fried or cooked with dry heat until crunchy', 12.00, '5_Appalam.jpg', 5),
+>>>>>>> refs/remotes/origin/main
 (12, 'Panipuri', 'Consists of a round hollow puri, filled with a mixture of flavored water, tamarind chutney, chili powder, chaat masala, potato mash, onion or chickpeas', 15.50, '5_Pani Puri.jpg', 5),
 (13, 'Samossa', 'Fried or baked pastry with a savory filling, including ingredients such as spiced potatoes, onions, peas.', 2.50, '5_Samosa.jpg', 5),
 (14, 'Lemonade', 'Sweetened lemon-flavored beverage', 4.50, '6_Lemonade.jpg', 6),
@@ -69,27 +92,44 @@ INSERT INTO `menu` (`id`, `name`, `description`, `price`, `image`, `category`) V
 
 CREATE TABLE `orders` (
   `id` int(9) NOT NULL,
+<<<<<<< HEAD
   `datetime` datetime NOT NULL DEFAULT current_timestamp(),
+=======
+  `datetime` timestamp NOT NULL DEFAULT current_timestamp(),
+>>>>>>> refs/remotes/origin/main
   `username` varchar(255) NOT NULL,
   `menuID` varchar(99) NOT NULL,
   `category` varchar(255) NOT NULL,
   `quantity` varchar(99) NOT NULL,
   `total` float(9,2) NOT NULL,
   `receipt` varchar(255) DEFAULT NULL,
+<<<<<<< HEAD
   `status` int(9) NOT NULL,
   `approvedBy` varchar(255) NOT NULL,
   `collection` varchar(99) NOT NULL,
   `collectiontime` datetime DEFAULT NULL,
   `devaddress` varchar(255) NOT NULL
+=======
+  `status` int(9) NOT NULL
+>>>>>>> refs/remotes/origin/main
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `orders`
 --
 
+<<<<<<< HEAD
 INSERT INTO `orders` (`id`, `datetime`, `username`, `menuID`, `category`, `quantity`, `total`, `receipt`, `status`, `approvedBy`, `collection`, `collectiontime`, `devaddress`) VALUES
 (41, '2023-04-02 19:34:19', 'Mugi', '1|18', '', '5|5', 55.00, '41_Mugi.jpg', 2, 'Admin', 'Pick-Up', '2023-04-11 10:40:00', ''),
 (42, '2023-04-02 19:40:51', 'Yuga', '4|6|9|15', '', '100|100|100|100', 1565.00, NULL, 0, '', 'Delivery', '2023-04-21 13:00:00', 'Kajang');
+=======
+INSERT INTO `orders` (`id`, `datetime`, `username`, `menuID`, `category`, `quantity`, `total`, `receipt`, `status`) VALUES
+(34, '2022-04-19 15:32:23', 'Yuga', '3|12|15', '1|4|5', '2|2|2', 21.50, '34_Yuga.png', 1),
+(35, '2022-04-19 18:39:21', 'Kirthiaini', '3|5', '1|2', '2|2', 10.00, NULL, 0),
+(37, '2022-04-24 21:23:10', 'Yuga', '1|18|10|8|11|21', '1|2|3|4|5|6', '5|4|3|6|4|2', 37.50, NULL, 0),
+(38, '2022-04-25 10:30:20', 'Mugi', '1|6|7', '1|3|4', '10|10|10', 10.15, NULL, 0),
+(39, '2022-04-26 19:19:12', 'Mugi', '2', '1', '0', 7.50, NULL, 0);
+>>>>>>> refs/remotes/origin/main
 
 -- --------------------------------------------------------
 
@@ -185,7 +225,11 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
+<<<<<<< HEAD
   MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+=======
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+>>>>>>> refs/remotes/origin/main
 
 --
 -- AUTO_INCREMENT for table `shop`

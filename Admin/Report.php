@@ -31,7 +31,11 @@ $pdf->Cell(25 ,6,'Total Sales',1,1,'C');/*end of line*/
 $pdf->SetFont('Arial','',10);
 $total = 0;
 $no = 0;
+<<<<<<< HEAD
 $result = mysqli_query($link, "SELECT * FROM orders WHERE status=2");
+=======
+$result = mysqli_query($link, "SELECT * FROM orders ");
+>>>>>>> refs/remotes/origin/main
 while($rowP= mysqli_fetch_array($result, MYSQLI_BOTH))
 {
 	$menuarr = explode("|",$rowP['menuID']);
