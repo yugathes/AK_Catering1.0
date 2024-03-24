@@ -64,11 +64,7 @@
 			<i class="fa fa-fw fa-shopping-cart"></i>Orders
 		</a>
 		<a <?php if (basename($_SERVER['PHP_SELF']) == "StockReport.php") echo "class='active'"?> href="StockReport.php">
-<<<<<<< HEAD
 			<i class="fa fa-fw fa-file"></i>Sales Report
-=======
-			<i class="fa fa-fw fa-file"></i>Stock Report
->>>>>>> refs/remotes/origin/main
 		</a>
 		
 		
