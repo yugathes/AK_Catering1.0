@@ -22,12 +22,6 @@
 						<input type="password" name="password"><br><br>
 						<label>Contact Number</label>
 						<input type="tel" name="Hp" placeholder="0123456789" pattern="[0-9]{3}[0-9]{3}[0-9]{4,5}" required><br><br>
-<<<<<<< HEAD
-						<label>Address</label>
-						<textarea rows="3" cols="30" name="address" required></textarea>
-=======
-						
->>>>>>> refs/remotes/origin/main
 						<input type="hidden" name="type_user" value="Customer">
 						<br><br>
 						<button type="submit" class="btn" name="reg_user">Register</button>
