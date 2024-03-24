@@ -143,15 +143,14 @@ CREATE TABLE `users` (
 --
 -- Dumping data for table `users`
 --
-
 INSERT INTO `users` (`username`, `password`, `name`, `email`, `Hp`, `type_user`) VALUES
-('Admin', '1234', 'Admin2', 'admin2@gmail.com', '60149165192', 'Admin'),
-('Yuga', '1234', 'Yugathes Subramaniam', 'yugathesyuga@gmail.com', '60149165192', 'Customer'),
-('Piravin', '123', 'Piravin', 'piravin@gmail.com', '018823929', 'Staff'),
-('Goauthaam', '1234', 'Goauthaam', 'goauthaamarul@gmail.com', '01112170069', 'Customer'),
-('Mugi', '1234', 'Mugilan', 'mugilan@gmail.com', '013563565', 'Customer'),
-('Kirthiaini', '12345678', 'Kirthiaini', 'kirthiaini@gmail.com', '0149165192', 'Customer'),
-('Customer', '12345678', 'Muhammad Amirul Bin Barkath Khan', 'business.gsb@gmail.com', '0149165192', 'Customer');
+ ('Admin', '1234', 'Admin2', 'admin2@gmail.com', '60149165192', 'Admin'),
+ ('Yuga', '1234', 'Yugathes Subramaniam', 'customer@gmail.com', '60123456789', 'Customer'),
+ ('Piravin', '123', 'Piravin', 'staff@gmail.com', '60123456789', 'Staff'),
+ ('Goauthaam', '1234', 'Goauthaam', 'customer4@gmail.com', '60123456789', 'Customer'),
+ ('Mugi', '1234', 'Mugilan', 'customer3@gmail.com', '60123456789', 'Customer'),
+ ('Kirthiaini', '12345678', 'Kirthiaini', 'customer2@gmail.com', '60123456789', 'Customer'),
+ ('Customer', '12345678', 'Muhammad Amirul Bin Barkath Khan', 'customer1@gmail.com', '60123456789', 'Customer');
 
 --
 -- Indexes for dumped tables
