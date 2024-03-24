@@ -64,19 +64,11 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 				<?php	while($baris= mysqli_fetch_array($resultGet, MYSQLI_BOTH))	{?>
 					<div class="input-group">
 						<label>Name</label>
-<<<<<<< HEAD
-						<input type="text" name="name" value="<?php echo $baris['name']; ?>" required><br><br>
-						<label>Price</label>
-						<input type="number" name="price" step="0.01" value="<?php echo $baris['price'] ?>" required><br><br>
-						<label>Description</label>
-						<textarea rows="5" cols="45" name="description" value="<?php echo $baris['description'] ;?>" required><?php echo $baris['description'] ;?></textarea><br><br>
-=======
 						<input type="text" name="name" value="<?php echo $baris['name']; ?>"><br><br>
 						<label>Price</label>
 						<input type="number" name="price" step="0.01" value="<?php echo $baris['price'] ?>"><br><br>
 						<label>Description</label>
 						<textarea rows="5" cols="45" name="description" value="<?php echo $baris['description'] ;?>"><?php echo $baris['description'] ;?></textarea><br><br>
->>>>>>> refs/remotes/origin/main
 						<label>Image</label>
 						<?php	
 					if($baris['image'] == NULL){	?>
@@ -91,11 +83,7 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 							</a>	
 						</div><?php	}?><br><br>
 						<label>Category</label>
-<<<<<<< HEAD
-						<select id="service" name="category" required>
-=======
 						<select id="service" name="category">
->>>>>>> refs/remotes/origin/main
 							<?php 
 								if($baris['category']=="1")	echo "<option value='1' selected >Rice</option>";
 								else	echo "<option value='1'>Rice</option>";
@@ -107,13 +95,8 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 								else	echo "<option value='4'>Vegetables</option>";
 								if($baris['category']=="5")	echo "<option value='5' selected >Sides</option>";
 								else	echo "<option value='5'>Sides</option>";
-<<<<<<< HEAD
-								if($baris['category']=="6")	echo "<option value='6' selected >Drinks</option>";
-								else	echo "<option value='6'>Drinks</option>";
-=======
 								if($baris['category']=="6")	echo "<option value='5' selected >Drinks</option>";
-								else	echo "<option value='5'>Drinks</option>";
->>>>>>> refs/remotes/origin/main
+								else	echo "<option value='6'>Drinks</option>";
 							?>
 						</select><br><br>
 						<input type="hidden" name="id" value="<?php echo $id;?>">
