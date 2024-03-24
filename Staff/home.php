@@ -34,21 +34,11 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 						<label>Username</label>
 						<input type="text" name="username" value="<?php echo $baris['username']; ?>" disabled><br><br>
 						<label>Email</label>
-<<<<<<< HEAD
-						<input type="email" name="email" value="<?php echo $baris['email'] ?>"required><br><br>
-						<label>Name</label>
-						<input type="text" name="name" value="<?php echo $baris['name'] ?>"required><br><br>
-						<label>Contact Number</label>
-						<input type="text" name="Hp" value="<?php echo $baris['Hp']; ?>"required><br><br>
-						<label>Password</label>
-						<input type="text" name="password" value="<?php echo $baris['password']; ?>" required><br><br>
-=======
 						<input type="email" name="email" value="<?php echo $baris['email'] ?>"><br><br>
 						<label>Name</label>
 						<input type="text" name="name" value="<?php echo $baris['name'] ?>"><br><br>
 						<label>Contact Number</label>
 						<input type="text" name="Hp" value="<?php echo $baris['Hp']; ?>"><br><br>
->>>>>>> refs/remotes/origin/main
 						<input type="hidden" name="username" value="<?php echo $name;?>">
 						<button style="position: relative;left: 80%"; type="submit" class="btn" name="staff">Update</button>
 					</div> <?php	}?>
