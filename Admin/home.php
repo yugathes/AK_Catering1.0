@@ -62,14 +62,7 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 	date_default_timezone_set('Asia/Kuala_Lumpur');
 	$date = date('Y-m-d', time());
 	$date = $date.'%';
-	
-<<<<<<< HEAD
-	$managerQ = "select * from users where type_user='Manager'";	
-	$managerR = mysqli_query($link,$managerQ);
-	$manager = mysqli_num_rows($managerR);
-	
-=======
->>>>>>> refs/remotes/origin/main
+
 	$ownerQ = "select * from users where type_user='Staff'";	
 	$ownerR = mysqli_query($link,$ownerQ);
 	$owner = mysqli_num_rows($ownerR);
@@ -81,8 +74,7 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 	$OrdersQ = "select * from orders";	
 	$OrdersR = mysqli_query($link,$OrdersQ);
 	$Orders = mysqli_num_rows($OrdersR);
-	
-<<<<<<< HEAD
+
 	$AOrdersQ = "select * from orders WHERE status = 2";	
 	$AOrdersR = mysqli_query($link,$AOrdersQ);
 	$AOrders = mysqli_num_rows($AOrdersR);
@@ -94,11 +86,8 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 	$DOrdersQ = "select * from orders  WHERE status = 3";	
 	$DOrdersR = mysqli_query($link,$DOrdersQ);
 	$DOrders = mysqli_num_rows($DOrdersR);
-	
-	$salesQ = "select SUM(total) from orders WHERE status = 2 ";	
-=======
+
 	$salesQ = "select SUM(total) from orders";	
->>>>>>> refs/remotes/origin/main
 	$salesR = mysqli_query($link,$salesQ);
 	$Crow= mysqli_fetch_array($salesR, MYSQLI_BOTH);
 	$sales = $Crow[0];
@@ -118,24 +107,13 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 				<p><?php echo $customers;?></p>
 			</div>
 		</div>
-  
-		<div class="column">
-			<div class="card">
-<<<<<<< HEAD
-				<h3>Total Manager</h3>
-				<p><?php echo $manager;?></p>
-			</div>
-		</div>
 		
 		<div class="column">
 			<div class="card">
-=======
->>>>>>> refs/remotes/origin/main
 				<h3>Total Orders</h3>
 				<p><?php echo $Orders;?></p>
 			</div>
 		</div>
-<<<<<<< HEAD
 	</div>
 	<br>
 	<br>
@@ -160,9 +138,6 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 				<p><?php echo $POrders;?></p>
 			</div>
 		</div>
-=======
->>>>>>> refs/remotes/origin/main
-  
 		<div class="column">
 			<div class="card">
 				<h3>Overall Sales</h3>
