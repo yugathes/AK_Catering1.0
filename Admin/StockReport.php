@@ -45,11 +45,7 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 }
 </style>
 <body>
-<<<<<<< HEAD
 	<h1 align="center">Sales Report</h1>
-=======
-	<h1 align="center">Stock Report</h1>
->>>>>>> refs/remotes/origin/main
     <center style="margin-top: 150px;">
       <a class="button-74" href="Report.php">Generate Report</a>
     </center>
