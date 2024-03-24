@@ -177,8 +177,7 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 				echo "style='background:green;color:white;margin-right: 5px;'><span>&#10004;</span></button>";
 				echo "<button type='submit' name='approve' value='3' style='background:red;color:white;'><span>&#10006;</span></button>";
 			}
-			else	echo "disabled>-</button>";?>
-			<? }
+			else	echo "disabled>-</button>"; }
 			if($row['status']=="2")	echo "<p style='color: green;'>Approved</p>"; 
 			if($row['status']=="3")	echo "<p style='color: red;'>Declined</p>"; 
 			?></td>
@@ -188,7 +187,6 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 			<?php	$no++;	}?>
 	</table>
 <?php
-		
 	}
 }
 else	{
