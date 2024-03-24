@@ -21,10 +21,8 @@ if (isset($_POST['reg_user'])) {
   $type_user = "Customer";
   $Hp = $_POST['Hp'];
   $name = $_POST['name'];
-<<<<<<< HEAD
-   $address = $_POST['address'];
-=======
->>>>>>> refs/remotes/origin/main
+  $address = $_POST['address'];
+
 	if (strlen($password)<8) { array_push($errors, "Password must be 8 characters"); }
 
   // form validation: ensure that the form is correctly filled ...
@@ -56,13 +54,10 @@ if (isset($_POST['reg_user'])) {
   if (count($errors) == 0) {
   	//encrypt the password before saving in the database$password = md5($password)
 
-<<<<<<< HEAD
+
   	$query = "INSERT INTO users (username, password, name, email,  Hp, address, type_user) 
   			  VALUES('$username', '$password', '$name', '$email', '$Hp', '$address', '$type_user')";
-=======
-  	$query = "INSERT INTO users (username, password, name, email,  Hp, type_user) 
-  			  VALUES('$username', '$password', '$name', '$email', '$Hp', '$type_user')";
->>>>>>> refs/remotes/origin/main
+
   	mysqli_query($ds, $query) or die( mysqli_error($ds));
 	$_SESSION['username'] = $username;
 	$_SESSION['success'] = "You are now logged in";
