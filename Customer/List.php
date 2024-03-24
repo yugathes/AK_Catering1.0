@@ -63,15 +63,6 @@ $user = $_SESSION["username"];?>
 		<tr>
 			<th>No</th>
 			<th colspan="2">Ordered On</th>
-<<<<<<< HEAD
-			<th style="width:25%" colspan="2">Menu & Quantity</th>
-			<th>Total</th>
-			<th>Status</th>
-			<th style="width:10%">Payment</th>
-			<th>Delivery Address</th>
-			<th>Collection</th>
-			<th colspan="2">Collection Date Time</th>
-=======
 			<th style="width:auto" colspan="2">Menu & Quantity</th>
 			<th>Total</th>
 			<th>Status</th>
@@ -79,7 +70,6 @@ $user = $_SESSION["username"];?>
 			<th>Approved By</th>
 			<th>Collection</th>
 			<th colspan="2">Collection Time Date</th>
->>>>>>> refs/remotes/origin/main
 			<th>Action</th>
 		</tr>	 
 		
@@ -146,11 +136,7 @@ $user = $_SESSION["username"];?>
 				</center>
 			<!--<input type="file" name="receipt" accept="image/png, image/jpeg, application/pdf">
 				<img border="0" alt="editB" src="../CSS/btn/uploadB.png" width="25" height="25"></input>--></td>
-<<<<<<< HEAD
-			<td><?php echo $row['devaddress'];?></td>
-=======
 			<td><?php if($row['approvedBy']==NULL)	echo "No approval";	echo $row['approvedBy'];?></td>
->>>>>>> refs/remotes/origin/main
 			<td><?php echo $row['collection'];?></td>
 			<td><?php echo $date1;?></td>
 			<td><?php echo $time1;?></td>
@@ -235,11 +221,7 @@ if(isset($_POST["upload"])){
 						window.onload = function () 
 						{ 
 						alert("File been Uploaded...");
-<<<<<<< HEAD
-						open("List.php","_top");
-=======
 						open("http://localhost/FoodOrderingSystem/mail.php?status=2&user='.$user.'&id='.$id.'","_top");
->>>>>>> refs/remotes/origin/main
 						}
 						</script>';
 				}
