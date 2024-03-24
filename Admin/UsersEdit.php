@@ -37,21 +37,11 @@ if(isset ($_SESSION["username"])) //session userid gets value from text field na
 						<label>Username</label>
 						<input type="text" name="username" value="<?php echo $baris['username']; ?>" disabled><br><br>
 						<label>Name</label>
-<<<<<<< HEAD
-						<input type="text" name="name" value="<?php echo $baris['name']; ?>"required><br><br>
-						<label>Email</label>
-						<input type="email" name="email" value="<?php echo $baris['email'] ?>"required><br><br>
-						<label>Contact Number</label>
-						<input type="text" name="Hp" value="<?php echo $baris['Hp']; ?>"required><br><br>
-						<label>Address</label>
-						<textarea rows="3" cols="30" name="address" value="<?php echo $baris['address']; ?>" required><?php echo $baris['address']; ?></textarea><br><br>
-=======
 						<input type="text" name="name" value="<?php echo $baris['name']; ?>"><br><br>
 						<label>Email</label>
 						<input type="email" name="email" value="<?php echo $baris['email'] ?>"><br><br>
 						<label>Contact Number</label>
 						<input type="text" name="Hp" value="<?php echo $baris['Hp']; ?>"><br><br>
->>>>>>> refs/remotes/origin/main
 						<input type="hidden" name="username" value="<?php echo $name;?>">
 						<button style="position: relative;" type="submit" class="btn" name="staffAdm">Update</button>
 						<a style="position: relative;float:right;" href="UsersReset.php?id=<?php echo $baris['username'];?>" class="btn"> Reset Password</a>
